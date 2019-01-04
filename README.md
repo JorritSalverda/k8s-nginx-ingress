@@ -11,5 +11,5 @@ kubectl create clusterrolebinding owner-cluster-admin-binding \
 To run nginx ingress controller at it's cheapest - yes with possible downtime - execute the following command:
 
 ```
-cat kubernetes.yaml | ALLOW_IP=<my public ip address> envsubst \$ALLOW_IP | kubectl apply -f -
+cat kubernetes.yaml | kubectl apply -f -
 ```
